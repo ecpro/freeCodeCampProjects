@@ -1,0 +1,11 @@
+{
+  "name": "random-quote-machine",
+  "version": "1.0.0",
+  "description": "freeCodeCampProject for certification",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Piyush Ravi",
+  "license": "ISC"
+}
