@@ -8,26 +8,28 @@
 </head>
 
 <body>
-    <div class="quoteCategory">
-        <ul>
-            <li>
-                <a class="btn" id="famous" href="">Famous</a>
-            </li>
-            <li>
-                <a class="btn" id="movies" href="">Movie</a>
-            </li>
-        </ul>
-    </div>
-    <div class="quoteBox">
-        <div>
-            <h1 class="quote"></h1>
-            <p class="author"></p>
+    <div class="container">
+        <div class="quoteCategory">
+            <ul>
+                <li>
+                    <a class="btn selected" id="famous" href="">Famous Quote</a>
+                </li>
+                <li>
+                    <a class="btn" id="movies" href="">Movie Quote</a>
+                </li>
+            </ul>
         </div>
-    </div>
-    <div class="loader"></div>
-    <div class="quoteShare">
-        <a href="" class="btn update-js">Next Quote</a>
-        <a href="" class="btn">Tweet</a>
+        <div class="quoteBox">
+            <div>
+                <h1 class="quote"></h1>
+                <p class="author"></p>
+            </div>
+        </div>
+        <div class="loader"></div>
+        <div class="quoteShare">
+            <a href="" class="btn update-js"><i class="fa fa-angle-right"></i> Next Quote</a>
+            <a href="https://twitter.com/intent/tweet" class="btn"><i class="fa fa-twitter"></i> Tweet</a>
+        </div>
     </div>
 </body>
 <script src="./node_modules/jquery/dist/jquery.min.js"></script>
