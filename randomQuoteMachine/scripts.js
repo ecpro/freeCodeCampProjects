@@ -2,6 +2,8 @@ let category = "famous";
 let count = 1;
 let loading = true;
 let selected = "selected";
+let twitterURL = "https://twitter.com/intent/tweet?hashtags=quote&text=";
+let quote = "";
 
 // code to be executed when dom is ready
 $(document).ready(function() {
@@ -29,6 +31,7 @@ function getQuote(category, count) {
       loading = false;
       $(".quoteBox").addClass("show");
       $(".loader").addClass("hide");
+      quote = data.quote;
       $(".quoteBox .quote").text(data.quote);
       $(".quoteBox .author").text(data.author);
     },
@@ -64,4 +67,10 @@ $("#famous").on("click", function(event) {
   $("#movies").toggleClass(selected);
   console.log("catorri", category);
   getQuote(category);
+});
+
+$(".tweet-js").on("click", function(event) {
+    let encodedURL = twitterURL + encodeURIComponent(quote);
+  $(this).attr('href', encodedURL);
+  console.log($(this).attr("href"));
 });
